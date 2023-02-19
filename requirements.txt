@@ -1,0 +1,10 @@
+autoflake==2.0.1
+autopep8==2.0.1
+charset-normalizer==2.1.1
+docformatter==1.5.1
+pycodestyle==2.10.0
+pyflakes==3.0.1
+pyformat==0.7
+tomli==2.0.1
+unify==0.5
+untokenize==0.1.1
