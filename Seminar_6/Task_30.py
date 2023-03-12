@@ -9,20 +9,6 @@ quantity = int(input("Введите количество элементов п�
 diff = int(input("Введите разность элементов прогрессии:\n"))
 first = int(input("Введите первый элемент прогрессии:\n"))
 
-
-def arithmetic_progression(first: int,
-                           diff: int,
-                           quantity: int) -> list[int]:
-    """Возвращает список арифметической прогрессии по заданным:
-    1) первый элемент
-    2) разность
-    3) количество элементов"""
-
-    array = []
-    for i in range(0, quantity):
-        array.append(first)
-        first += diff
-    return array
-
-
-print(arithmetic_progression(first, diff, quantity))
+array = [lambda i=i:first + diff * i for i in range(0, quantity)]
+for num in array:
+    print(num(), end=" ")
